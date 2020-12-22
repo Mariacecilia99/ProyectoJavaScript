@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<!--
+	Typify by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Hipoteca</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<main class="menu">
+		    <button>
+			<ul id="ingreso">
+			<j>	Inicia Sesión</j> 
+			</ul>
+	        </button>
+           <button>
+			<ul> 
+			<o>Nuestras opciones</o>	
+			</ul>
+		</button>
+		<button>
+			<ul> 
+			<e>
+				Contactanos
+			</e>
+			</ul>
+			</button>
+
+		</main>
+
+		<!-- Banner -->
+			<section id="banner">
+		       
+				<h2 id="bienvenido"><strong>Hipotecamos</strong> tu casa</h2>
+				<p id ="iniciarSesion" >Hasta 24 cuotas sin intereses</p>
+
+				<ul class="actions">
+				<li><input id="ingresar"  onclick="mostrarInicio(); ocultarIngreso()" value="Ingresar" type="reset"></li>
+				</ul>
+		   
+
+					<div id="formularioInicio" onsubmit="formularioInicio();">
+						<form class="grid-form" method="post" action="#" id="form">
+							<div class="form-control narrow">
+								<input name="name" id="userName" type="text" placeholder="Usuario"> 
+							</div>
+							<div class="form-control narrow">
+								<input name="name" id="contraseña" type="password" placeholder="Contraseña"> 
+							</div>
+
+						<ul class="actions">
+							
+						<button   type="submit" >Enviar</button> 
+						</ul>
+						   </form>
+					</div>
+				</div>
+
+				
+           
+				
+				
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper special">
+				<div class="inner">
+					<header class="major">
+						<h2 id="opciones">Te presentamos nuestras opciones</h2>
+					</header>
+					<div class="features" 
+					data-aos="fade-left" data-aos-duration="5000" data-aos-once="true"                >
+						<div class="feature">
+							<i class="fa ">4</i>
+							<h3>Cuotas sin intereses</h3>
+							<p>Sed tempus feugiat adipiscing nisl cursus aliquam dolore.</p>
+						</div>
+						<div class="feature" 
+						data-aos="fade-right" data-aos-duration="5000" data-aos-once="true"                >
+							<i class="fa">8</i>
+							<h3>Cuotas sin intereses</h3>
+							<p>Sed tempus feugiat adipiscing nisl cursus aliquam dolore.</p>
+						</div>
+						<div class="feature">
+							<i class="fa">15</i>
+							<h3>Cuotas sin intereses</h3>
+							<p>Sed tempus feugiat adipiscing nisl cursus aliquam dolore.</p>
+						</div>
+						<div class="feature">
+							<i class="fa">20</i>
+							<h3>Cuotas sin intereses</h3>
+							<p>Sed tempus feugiat adipiscing nisl cursus aliquam dolore.</p>
+						</div>
+						<div class="feature">
+							<i class="fa">24</i>
+							<h3>Cuotas sin intereses</h3>
+							<p>Sed tempus feugiat adipiscing nisl cursus aliquam dolore.</p>
+						</div>
+					</div>
+				</div>
+				
+				<ul class="actions">
+					<li><input id="hipoteca"  onclick="mostrarInicio();" value="¿Que es una hipoteca?" type="reset"></li>
+					</ul>
+					<div id="textoHipoteca"></div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2 special">
+				<div class="inner narrow">
+					<header>
+						<h2 id="contacto">CONTACTANOS!</h2>
+					</header>
+					<form class="grid-form" method="post" action="#">
+						<div class="form-control narrow">
+							<label for="name">Nombre</label>
+							<input name="nombre" id="nombre" type="text">
+						</div>
+						<div class="form-control narrow">
+							<label for="name">Apellido</label>
+							<input name="apellido" id="apellido" type="text">
+						</div>
+
+						<div class="form-control narrow">
+							<label for="email">Mail</label>
+							<input name="email" id="email" type="email">
+						</div>
+						
+                         
+						<div class="form-control narrow">
+							<label for="email">Cuotas</label>
+
+							<select name="cuotas" id="cuotas">
+
+								<option>4</option>
+						  
+								<option>8</option>
+
+								<option>15</option>
+
+								<option>20</option>
+
+						        <option>24</option>
+							  </select>
+							
+		
+						
+						</div>
+        
+
+					
+				</div>
+				<div  id="botons" >
+					<div id="boton">
+					<ul class="actions">
+						<li><input type="reset"  id="botonConsulta" class="enviar"    onclick=" enviar();  datosUsuario()"         value="Enviar"></li>
+					</ul>
+					<ul class="actions">
+						<li><input type="reset" id="eliminar"  value="Eliminar" ></li>
+					</ul>
+					</div>
+				  </div>
+				</form>
+				<div id="error">
+				
+				</div>
+				<table class="table" id="tabla">
+					<tr>
+					 <th>Nombre</th>
+					 <th>Apellido</th>
+					 <th>Mail</th>
+					 <th>Cuotas</th>
+				  
+				  
+					</tr>
+					<tr>
+					 <td></td>
+					 <td></td>
+					<td></td>
+					<td></td>
+					</tr>
+					<h3 class="datos">Sus datos:</h3>
+
+                </table>
+			
+				
+				</section>
+			<footer id="footer">
+				<div class="copyright">
+					&copy; Untitled. Design: <a href="http://templated.co/">TEMPLATED</a>.
+				</div>
+			</footer>
+		   <script src="assets/js/hipoteca.js"> </script>
+		   
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init({
+	 duration: 3000,
+	 once: true,
+   });
+ </script>
+
+	</body>
+</html>
